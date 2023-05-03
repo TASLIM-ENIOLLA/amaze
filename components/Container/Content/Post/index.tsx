@@ -4,7 +4,6 @@ type PostProps = {
   author: string,
   content: string,
   description: string,
-  publishedAt: string,
   publishedAt: {id: string, name: string},
   title: string,
   url: string,
