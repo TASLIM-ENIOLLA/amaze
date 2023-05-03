@@ -6,11 +6,12 @@ import Subscribe from "./Subscribe"
 import Footer from "./Footer"
 import { ContainerContext } from './__context'
 import { OnSearchProps, ContainerProps } from './__types'
+import { PostProps } from './Content/Post/__types'
 
 export default function Container (props: ContainerProps) {
   const [containerProps, setContainerProps] = useState(props)
   const ContextValue = useMemo((): any => ({
-    data: containerProps.data,
+    data: PostProps []: containerProps.data,
     setData: (data): any => setContainerProps((n) => ({...n, data}))
   }), [containerProps.data])
 
