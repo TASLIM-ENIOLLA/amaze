@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Container from '../components/Container'
+import { ContainerProps } from '../components/__types'
 
 type ContainerProps = {
   data: []

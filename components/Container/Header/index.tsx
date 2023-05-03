@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from "react"
-import { routes, RouteProps } from './__props/routes'
+import { routes } from './__props/routes'
+import { RouteProps } from './__types'
 
 export default function Header () {
 	const [openSideBar, toggleSideBar] = useState(false)

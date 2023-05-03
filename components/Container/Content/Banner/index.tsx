@@ -21,7 +21,7 @@ export default function Banner ({type}: {type: string}) {
                   <Image
                     width={100}
                     height={100}
-                    alt={message}
+                    alt={`[Image]: ${message}`}
                     src="/images/amaze-ministries.png"
                   />
                 </div>

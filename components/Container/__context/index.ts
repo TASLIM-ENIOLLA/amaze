@@ -1,7 +1,4 @@
 import { createContext } from 'react'
+import { ContainerContextInterface } from '../__interface'
 
-// interface ContainerContextInterface {
-	
-// }
-
-export const ContainerContext = createContext()
+export const ContainerContext = createContext<ContainerContextInterface>()

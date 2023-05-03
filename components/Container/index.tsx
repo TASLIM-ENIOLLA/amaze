@@ -5,25 +5,14 @@ import Content from "./Content"
 import Subscribe from "./Subscribe"
 import Footer from "./Footer"
 import { ContainerContext } from './__context'
-
-type OnSearchProps = {
-  query: string
-}
-
-type ContainerProps = {
-  data: [],
-  type: string
-  searchAble: boolean
-  onSearch: any
-  subtitle: string
-}
+import { OnSearchProps, ContainerProps } from './__types'
 
 export default function Container (props: ContainerProps) {
   const [containerProps, setContainerProps] = useState(props)
-  const ContextValue = {
+  const ContextValue = useMemo((): any => ({
     data: containerProps.data,
     setData: (data): any => setContainerProps((n) => ({...n, data}))
-  }
+  }), [containerProps.data])
 
   return (
     <ContainerContext.Provider value = {ContextValue}>

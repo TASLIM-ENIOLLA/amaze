@@ -1,11 +1,7 @@
 import { useMemo } from 'react'
 import Post from './Post'
 import Banner from './Banner'
-
-type ContentProp = {
-  type: string,
-  data: any
-}
+import {  } from './__types'
 
 const dataListTypes: readonly string [] = ['POSTS', 'TAGS']
 

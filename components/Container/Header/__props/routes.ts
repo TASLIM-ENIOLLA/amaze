@@ -1,3 +1,5 @@
+import { Routes } from '../__types'
+
 export const routes: Routes = [
   {
     name: 'home',
@@ -16,10 +18,3 @@ export const routes: Routes = [
     href: '/contact-us'
   },
 ]
-
-type Routes = RouteProps []
-
-export type RouteProps = {
-  name: string,
-  href: string
-}

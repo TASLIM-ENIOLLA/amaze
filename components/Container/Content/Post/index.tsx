@@ -1,27 +1,16 @@
 import Image from 'next/image'
-
-type PostProps = {
-  author: string,
-  content: string,
-  description: string,
-  publishedAt: {id: string, name: string},
-  title: string,
-  url: string,
-  urlToImage: string
-}
+import type { PostProps } from './__types'
 
 export default function Post ({url, title, description, urlToImage}: PostProps) {
-  console.log(urlToImage)
   return (
     <div className="col-12 col-md-6 mb-5 pb-5">
-      <a href={url}>
+      <a href={url} className='d-inline-block'>
         <Image
           width={180}
           height={100}
           style={postImg}
-          src={urlToImage || '/images/amaze.png'}
-          // src='/images/amaze.png'
           alt={`[Image]: ${title}`}
+          src={urlToImage || '/images/amaze.png'}
           className="d-block shadow-sm bg-light mb-3"
         />
       </a>
