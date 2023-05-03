@@ -23,7 +23,7 @@ export default function Container (props: ContainerProps) {
   const ContextValue = useMemo((): any => ({
     data: containerProps.data,
     setData: (data) => setContainerProps((n) => ({...n, data}))
-  }), [props.data])
+  }), [props.data, containerProps.data])
 
   return (
     <ContainerContext.Provider value = {ContextValue}>

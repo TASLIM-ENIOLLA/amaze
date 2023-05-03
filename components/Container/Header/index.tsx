@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState } from "react"
 import { routes, RouteProps } from './__props/routes'
 
@@ -9,9 +10,14 @@ export default function Header () {
 			<div className="container">
 				<div className="row align-items-center justify-content-between">
 					<div className="col-auto">
-						<a href="/">
-							<img src = '/images/amaze.png' width="50" />
-						</a>
+						<Link href="/">
+							<Image
+								width={50}
+								height={50}
+								src = '/images/amaze.png'
+								alt="Amaze ministries logo"
+							/>
+						</Link>
 					</div>
 					<div className="d-md-none col-auto">
 						<button
@@ -22,7 +28,7 @@ export default function Header () {
 					</div>
 					<div className="d-none d-md-block col-auto">{
 						routes.map(({name, href}: RouteProps, index) => (
-							<a href={href} className="bold mx-4 d-inline-block text-chocolate text-capitalize" key={index}>{name}</a>
+							<Link href={href} className="bold mx-4 d-inline-block text-chocolate text-capitalize" key={index}>{name}</Link>
 						))
 					}</div>
 				</div>
@@ -36,13 +42,18 @@ export default function Header () {
 							<div className="animated slideInRight col-12 py-3 vh-100 shadow bg-white" style={sideBarNav}>
 								<div className="row flex-column px-2">
 									<div className="col-auto py-4">
-										<a href="">
-											<img src="/images/amaze.png" width="60" />
-										</a>
+										<Link href="">
+											<Image
+												width={60}
+												height={60}
+												src="/images/amaze.png"
+												alt="Amaze ministries logo"
+											/>
+										</Link>
 									</div>
 									<div className="col">{
 										routes.map(({name, href}: RouteProps, index) => (
-											<a href={href} className="py-3 my-2 bold d-block text-chocolate text-capitalize" key={index}>{name}</a>
+											<Link href={href} className="py-3 my-2 bold d-block text-chocolate text-capitalize" key={index}>{name}</Link>
 										))
 									}</div>
 								</div>

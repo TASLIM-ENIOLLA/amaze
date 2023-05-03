@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useMemo } from 'react'
 
 export default function Banner ({type}) {
@@ -17,7 +18,12 @@ export default function Banner ({type}) {
             <div className="container-fluid">
               <div className="row text-center">
                 <div className="col-12 mb-4">
-                  <img />
+                  <Image
+                    width={100}
+                    height={100}
+                    alt={message}
+                    src="/images/amaze-ministries.png"
+                  />
                 </div>
                 <div className="col-12 mb-4">
                   <h5 className="bold text-muted mb-0">{message}</h5>

@@ -49,7 +49,7 @@ export default function Title({onSearch, searchAble, subtitle}: TitleProps) {
         <div className='m-0'>{subtitle}</div>
       )
     }
-  }, [searchAble, input])
+  }, [searchAble, input, subtitle])
 
   return (
     <section className = 'container py-4 border-bottom'>
