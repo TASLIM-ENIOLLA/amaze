@@ -1,0 +1,26 @@
+@import url("./fonts.css");
+@import url("./common.css");
+@import url("./animate.css");
+@import url("./bootstrap.css");
+@import url("../b-icon/css/bootstrap-icons.css");
+
+*{
+    font-size: 12px;
+    font-family: FiraSansRegular;
+}
+body {
+	scroll-behavior: smooth;
+}
+a, span {
+	font-size: inherit;
+}
+.border-0 {
+	border: none;
+}
+.bold {
+	font-weight: 900;
+    font-family: FiraSansBold;
+}
+.outline-0 {
+	outline: none;
+}

@@ -1,0 +1,63 @@
+/* Roboto Fonts */
+@font-face{
+	font-family: RobotoLight;
+	src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+@font-face{
+	font-family: RobotoRegular;
+	src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: RobotoMedium;
+	src: url(../fonts/roboto/Roboto-Medium.ttf);
+}
+@font-face{
+	font-family: RobotoBold;
+	src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face{
+	font-family: RobotoBlack;
+	src: url(../fonts/roboto/Roboto-Black.ttf);
+}
+/* Roboto Fonts */
+
+/* Montserrat Fonts */
+@font-face{
+	font-family: MontserratLight;
+	src: url(../fonts/montserrat/Montserrat-Light.ttf);
+}
+@font-face{
+	font-family: MontserratRegular;
+	src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+	font-family: MontserratMedium;
+	src: url(../fonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face{
+	font-family: MontserratBold;
+	src: url(../fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face{
+	font-family: MontserratBlack;
+	src: url(../fonts/montserrat/Montserrat-Black.ttf);
+}
+/* Montserrat Fonts */
+
+/* Open Sans Fonts */
+@font-face{
+	font-family: OpenSans;
+	src: url(../fonts/Open-Sans.woff2);
+}
+/* Open Sans Fonts */
+
+/* Other Fonts */
+@font-face{
+	font-family: FiraSansRegular;
+	src: url(../fonts/fira-sans/FiraSans-Regular.ttf);
+}
+@font-face{
+	font-family: FiraSansBold;
+	src: url(../fonts/fira-sans/FiraSans-Bold.ttf);
+}
+/* Other Fonts */
