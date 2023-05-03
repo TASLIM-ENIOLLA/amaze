@@ -11,6 +11,7 @@ export default function Footer () {
               height={200}
               style={footerImage}
               src="/images/amaze.png"
+              alt="Amaze ministries logo"
             />
           </div>
         </div>

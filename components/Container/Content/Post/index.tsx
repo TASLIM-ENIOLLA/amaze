@@ -20,6 +20,7 @@ export default function Post ({url, title, description, urlToImage}: PostProps) 
           height={100}
           style={postImg}
           src={urlToImage}
+          alt={`[Image]: ${title}`}
           className="d-block shadow-sm bg-light mb-3"
         />
       </a>
