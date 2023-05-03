@@ -2,7 +2,7 @@ import { createContext } from 'react'
 import { ContainerContextInterface } from '../__interface'
 
 const defaultContextValue = {
-	data: undefined,
+	data: [],
 	setData: () => undefined
 }
 
