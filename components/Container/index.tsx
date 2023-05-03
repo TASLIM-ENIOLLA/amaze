@@ -20,10 +20,10 @@ type ContainerProps = {
 
 export default function Container (props: ContainerProps) {
   const [containerProps, setContainerProps] = useState(props)
-  const ContextValue = useMemo((): any => ({
+  const ContextValue = {
     data: containerProps.data,
     setData: (data): any => setContainerProps((n) => ({...n, data}))
-  }), [containerProps.data])
+  }
 
   return (
     <ContainerContext.Provider value = {ContextValue}>
