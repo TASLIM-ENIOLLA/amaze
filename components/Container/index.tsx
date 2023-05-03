@@ -22,7 +22,7 @@ export default function Container (props: ContainerProps) {
   const [containerProps, setContainerProps] = useState(props)
   const ContextValue = useMemo((): any => ({
     data: containerProps.data,
-    setData: (data) => setContainerProps((n) => ({...n, data}))
+    setData: (data): any => setContainerProps((n) => ({...n, data}))
   }), [containerProps.data])
 
   return (

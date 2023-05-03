@@ -5,7 +5,7 @@ import { ContainerContext } from '../__context'
 export default function Title({onSearch, searchAble, subtitle}: TitleProps) {
   const [input, setInput]: InputState = useState('')
   const inputElement = useRef <HTMLInputElement | null> (null)
-  const { setData }: {setData: void} = useContext(ContainerContext)
+  const { setData }: {setData: any} = useContext(ContainerContext)
 
   function onSubmit (event: any): any {
     event.preventDefault()
