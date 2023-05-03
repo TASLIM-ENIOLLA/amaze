@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useMemo } from 'react'
 
-export default function Banner ({type}) {
+export default function Banner ({type}: {type: string}) {
 	const message = useMemo((): any => {
 		switch (type) {
 			case 'undefined': return 'Loading...'
