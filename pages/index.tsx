@@ -21,12 +21,15 @@ export default function Index ({data}: ContainerProps): NextPage {
 }
 
 export async function getServerSideProps (): GetServerSideProps {
-  const req = await fetch(`${SERVER}/api/posts`)
-  const res = await req.json()
+  // const req = await fetch(`${SERVER}/api/posts`)
+  // const res = await req.json()
 
   return {
     props: {
-      data: res
+      data: {
+        articles: [],
+        totalResults: 0
+      }
     }
   }
 }
