@@ -5,7 +5,7 @@ export default function Banner ({type}: {type: string}) {
 	const message = useMemo((): any => {
 		switch (type) {
 			case 'undefined': return 'Loading...'
-			case 'empty': return 'Empty posts returned!'
+			case 'empty': return 'Nothing to see here!'
 			case 'null': return 'Oops, an error occured!'
 		}
 	}, [type])
@@ -14,7 +14,7 @@ export default function Banner ({type}: {type: string}) {
 		<div className="container py-5">
       <div className="row pb-5 justify-content-center">
         <div className="col-lg-7">
-          <div className=" bg-light py-5 px-2" style={subscribePlatter}>
+          <div className="border bg-light py-5 px-2" style={subscribePlatter}>
             <div className="container-fluid">
               <div className="row text-center">
                 <div className="col-12 mb-4">
