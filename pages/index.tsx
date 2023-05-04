@@ -1,12 +1,13 @@
 import { useEffect } from 'react'
 import Container from '../components/Container'
 import { ContainerProps } from '../components/__types'
+import { NextPage, GetServerSideProps } from 'next'
 
-type ContainerProps = {
-  data: []
-}
+// type ContainerProps = {
+//   data: []
+// }
 
-export default function Index ({data}: ContainerProps) {
+export default function Index ({data}: ContainerProps): NextPage {
   return (
     <Container
       data={data}
@@ -22,7 +23,7 @@ export default function Index ({data}: ContainerProps) {
   )
 }
 
-export async function getServerSideProps () {
+export async function getServerSideProps (): GetServerSideProps {
   const req = await fetch('http://192.168.1.116:3000/api/posts')
   const res = await req.json()
 
